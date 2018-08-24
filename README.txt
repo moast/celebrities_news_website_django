@@ -1,24 +1,17 @@
-Thanks For Choosing our course :)
+Complete Crelebrities News Website in Django
 
-If you have completed the course successfully & liked it please don't forget to leave a review,
-because it will help us create more awesome courses for you :)
-
-########################################################################
-
-If you would like to be a Web Developer, then we have this course for you:
-
-https://www.udemy.com/django-web-developers/learn/v4/overview
-
+This project was created using Python - Django
 
 ###########################################################################
-If you would like to become a professional Mobile App developer then this course is the right one:
+If you want to learn Django & how this project was created join my course:
+(65%-70% OFF USING THIS COUPON)
 
-https://www.udemy.com/kivy-mobile-app/
+https://www.udemy.com/django-web-developers/?couponCode=GITHUB_COUPON
 
+##########################################################################
+If you would like to become a professional Mobile App developer in Kivy join this course:
+(65%-70% OFF USING THIS COUPON)
 
+https://www.udemy.com/kivy-mobile-app/?couponCode=GITHUB_COUPON
 
-###########################################################################
-If you want to learn Python from the very begining then this course is for you:
-(NOW FREE FOR LIMITED STUDENTS)
-
-https://www.udemy.com/python-from-a-to-z/?couponCode=ERQWOIYUTYUYTTRCCVC
+Thanks For Choosing our courses :)

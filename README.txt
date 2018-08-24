@@ -1,4 +1,4 @@
-Complete Crelebrities News Website in Django
+<h1> Complete Crelebrities News Website in Django </h1>
 
 This project was created using Python - Django
 

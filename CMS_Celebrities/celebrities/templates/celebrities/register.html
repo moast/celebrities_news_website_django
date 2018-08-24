@@ -1,0 +1,43 @@
+{% extends "celebrities/admin.html" %}
+
+
+
+
+{% block content %}
+
+
+    <h3><span class="label label-primary">Registration Area</span></h3>
+
+  <form action="" method="post" >
+     {% csrf_token %}
+
+    {% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+
+      <label>
+           {{ field.label_tag }}
+      </label>
+
+        <div>
+            {{ field }}
+        </div>
+
+
+    </div>
+
+{% endfor %}
+      <input type="submit" class="btn btn-primary" value="Register" style="margin-bottom: 40px">
+
+  </form>
+
+    <div class="container">
+        <h4>Already A User?</h4>
+    <a class="btn btn-primary" href="{% url "login" %}"><Span class="glyphicon glyphicon-user"></Span> Login </a>
+
+    </div>
+
+
+
+
+{% endblock %}

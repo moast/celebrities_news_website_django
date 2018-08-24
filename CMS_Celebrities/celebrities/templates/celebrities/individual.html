@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+	<title>Celebrities</title>
+
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" >
+	<link rel="stylesheet" href="{% static 'css/carousel.css' %}" type="text/css" >
+    <style>
+
+       body{
+           background-color: #e4b9b9;
+       }
+    </style>
+
+</head>
+
+
+
+
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">{{ celebrity.name }}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{% url 'celebrities' %} ">Home</a></li>
+                <li class="active"><a href="{% url 'celebrity-create' %} ">Add New</a></li>
+                  <li class="active"><a href="{% url 'celebrity-update' celebrity.id %} ">Update </a></li>
+
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+
+
+     <div class="container">
+
+          <div class="col-lg-4">
+
+          <img class="img-circle" src="{{ celebrity.image.url }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>  {{ celebrity.name }}</h2>
+           <p>  hair color : {{ celebrity.hair_color }}</p>
+           <p> age: {{ celebrity.age}}</p>
+            <p> rating : {{ celebrity.rating }}</p>
+          <p><a class="btn btn-default" href="{{ celebrity.id }}" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-danger" href="{% url 'celebrity-update' celebrity.id %}" role="button">Update!</a></p>
+                 <form action="{% url 'celebrity-delete' celebrity.id %}" method="post">
+                      {% csrf_token %}
+
+                      {% if user.is_superuser %}
+                    <input type="submit" class="btn btn-warning" onclick="return confirm('Are You Sure You Want to Delete this?')"  role="button" value="Delete">
+                     {% endif %}
+                  </form>
+
+
+        </div><!-- /.col-lg-4 -->
+
+
+     </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends "celebrities/admin.html" %}
+
+
+
+
+{% block content %}
+
+  <h3><span class="label label-success">Login Area</span></h3>
+  {% if userError %}
+    <div class="alert alert-warning">{{ userError }}</div>
+  {% endif %}
+
+  <form action="" method="post" >
+     {% csrf_token %}
+
+    {% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+
+      <label>
+           {{ field.label_tag }}
+      </label>
+
+        <div>
+            {{ field }}
+        </div>
+
+
+    </div>
+
+{% endfor %}
+      <input type="submit" class="btn btn-primary" value="Login" style="margin-bottom: 40px">
+  </form>
+
+
+    <div class="container">
+        <h4>Not Registered Yet?</h4>
+    <a class="btn btn-primary" href="{% url "register" %}"><Span class="glyphicon glyphicon-user"></Span> Register </a>
+
+    </div>
+
+
+
+{% endblock %}

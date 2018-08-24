@@ -1,0 +1,48 @@
+{% extends "celebrities/admin.html" %}
+
+
+
+
+
+
+    {% block content %}
+
+     {%  if request.user.is_authenticated %}
+
+  <form action="" method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+
+    {% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+
+      <label>
+           {{ field.label_tag }}
+      </label>
+
+        <div>
+            {{ field }}
+        </div>
+
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %}
+    </div>
+
+{% endfor %}
+      <input type="submit" class="btn btn-primary" value="Submit" style="margin-bottom: 40px">
+  </form>
+
+
+
+
+{% else %}
+<div class="alert alert-info"> You need to Register first to add new celebrities </div>
+         <a class="btn btn-danger" href="{% url "register"  %} ">Register</a>
+
+{% endif %}
+
+
+
+{% endblock %}
+

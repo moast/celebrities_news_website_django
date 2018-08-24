@@ -1,0 +1,53 @@
+{% extends "celebrities/header.html" %}
+
+
+
+
+{% block content %}
+  
+  
+       <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+
+
+      <!-- Three columns of text below the carousel -->
+       <div class="row">
+
+          {% for celebrity in records %}
+
+        <div class="col-lg-4">
+
+          <img class="img-circle" src="{{ celebrity.image.url }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>  {{ celebrity.name }}</h2>
+           <p>  hair color : {{ celebrity.hair_color }}</p>
+           <p> age: {{ celebrity.age}}</p>
+            <p> </p>
+          <p><a class="btn btn-default" href="{{ celebrity.id }}" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+
+            {% endfor %}
+      </div><!-- /.row -->
+
+
+
+
+
+  </div>
+
+
+
+
+
+  
+
+{% endblock %}
+
+
+
+

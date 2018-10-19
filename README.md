@@ -5,9 +5,11 @@ This project was created in Python - Django
 
 <h1>HOW TO RUN?</h1>
 
-1.Download the folder
-2.Navigate to the folder directory "CMS_Celebrities"
-3.Run python manage.py runserver
+<ol>
+  <i> Download the folder </i>
+  <i>Navigate to the folder directory "CMS_Celebrities" </i>
+  <i>Run python manage.py runserver</i>
+</ol>
 
 NOTE: Make sure Django is installed first
 

@@ -1,7 +1,7 @@
 
-<h1>Crelebrities News Website in Django </h1>
+<h1>Celebrities News Website in Django </h1>
 
-This project was created using Python - Django
+This project was created in Python - Django
 
 <h1>HOW TO RUN?</h1>
 

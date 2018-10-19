@@ -1,4 +1,4 @@
-<h1> Crelebrities News Website in Django </h1>
+<h1>Crelebrities News Website in Django </h1>
 
 This project was created using Python - Django
 

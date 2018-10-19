@@ -8,7 +8,7 @@ This project was created in Python - Django
 <ol>
   <li> Download the folder </li>
   <li>Navigate to the folder directory "CMS_Celebrities" </li>
-  <li>Run python manage.py runserver</li>
+  <li>Run this command "python manage.py runserver"</li>
 </ol>
 
 NOTE: Make sure Django is installed first

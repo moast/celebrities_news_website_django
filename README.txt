@@ -1,8 +1,8 @@
-Complete Crelebrities News Website in Django
+<h1> Crelebrities News Website in Django </h1>
 
 This project was created using Python - Django
 
-HOW TO RUN?
+<h1>HOW TO RUN?</h1>
 
 1.Download the folder
 2.Navigate to the folder directory "CMS_Celebrities"

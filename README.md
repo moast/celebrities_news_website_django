@@ -6,9 +6,9 @@ This project was created in Python - Django
 <h1>HOW TO RUN?</h1>
 
 <ol>
-  <i> Download the folder </i>
-  <i>Navigate to the folder directory "CMS_Celebrities" </i>
-  <i>Run python manage.py runserver</i>
+  <li> Download the folder </li>
+  <li>Navigate to the folder directory "CMS_Celebrities" </li>
+  <li>Run python manage.py runserver</li>
 </ol>
 
 NOTE: Make sure Django is installed first
@@ -25,4 +25,4 @@ If you would like to become a professional Mobile App developer in Kivy join thi
 
 https://www.udemy.com/kivy-mobile-app/?couponCode=GITHUBCOUPON
 
-Thanks For Choosing our courses :)
+Thanks For Choosing my courses :)
